@@ -4,10 +4,10 @@ import {dijkstra, getNodesInShortestPathOrder} from '../algorithms/dijkstra';
 
 import './PathfindingVisualizer.css';
 
-const START_NODE_ROW = 10;
-const START_NODE_COL = 15;
-const FINISH_NODE_ROW = 10;
-const FINISH_NODE_COL = 35;
+const START_NODE_ROW = 5;
+const START_NODE_COL = 8;
+const FINISH_NODE_ROW = 5;
+const FINISH_NODE_COL = 30;
 
 export default class PathfindingVisualizer extends Component {
   constructor() {
@@ -78,7 +78,7 @@ export default class PathfindingVisualizer extends Component {
 
     return (
       <>
-        <button onClick={() => this.visualizeDijkstra()}>
+        <button className="algo" onClick={() => this.visualizeDijkstra()}>
           Visualize Dijkstra's Algorithm
         </button>
         <div className="grid">

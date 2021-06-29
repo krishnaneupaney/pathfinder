@@ -1,4 +1,4 @@
-import React, {Component, Alert } from 'react';
+import React, {Component } from 'react';
 import Node from './Node/Node';
 import {dijkstra, getNodesInShortestPathOrder} from '../algorithms/dijkstra';
 

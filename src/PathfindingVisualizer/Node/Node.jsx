@@ -22,8 +22,9 @@ export default class Node extends Component {
       ? 'node-wall'
       : '';
 
-    return (
+    return (  
       <div
+    
         id={`node-${row}-${col}`}
         className={`node ${extraClassName}`}
         onMouseDown={() => onMouseDown(row, col)}

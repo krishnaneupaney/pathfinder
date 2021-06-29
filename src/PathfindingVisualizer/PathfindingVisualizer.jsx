@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Alert } from 'react';
 import Node from './Node/Node';
 import {dijkstra, getNodesInShortestPathOrder} from '../algorithms/dijkstra';
 
@@ -75,9 +75,13 @@ export default class PathfindingVisualizer extends Component {
 
   render() {
     const {grid, mouseIsPressed} = this.state;
-
     return (
+      
       <>
+        <div>
+          <h4>Hello and Welcome! please 
+          draw around the RED grid to</h4>
+        </div>
         <button className="algo" onClick={() => this.visualizeDijkstra()}>
           Visualize Dijkstra's Algorithm
         </button>
